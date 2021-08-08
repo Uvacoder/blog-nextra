@@ -2,7 +2,16 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+export async function getStaticProps() {
+  const res = await fetch(`https://api.github.com/users/holovin777/repos`)
+  const repos = await res.json()
+
+  return {
+    props: { repos }, // will be passed to the page component as props
+  }
+}
+
+export default function Home({repos}) {
   return (
     <div className={styles.container}>
       <Head>
@@ -21,6 +30,11 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
+          <ul>
+            {repos.map((repo) => (
+              <li>{repo.name} - {repo.language}</li>
+            ))}
+          </ul>
         </div>
       </main>
 

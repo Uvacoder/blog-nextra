@@ -16,3 +16,14 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.md {
+  padding: 20px;
+}
+
+pre {
+  overflow: auto;
+  color: #20DF37;
+  background: #272927;
+  padding: 5px;
+}

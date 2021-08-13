@@ -28,7 +28,8 @@ pre {
   overflow: auto;
   color: #20DF37;
   background: #272927;
-  padding: 5px;
+  padding: 8px;
+  border-radius: 10px;
 }
 
 .md h1 {

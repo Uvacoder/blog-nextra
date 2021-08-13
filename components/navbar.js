@@ -15,11 +15,6 @@ export default function Navbar() {
             <a className={styles.link}>Repositories</a>
           </Link>
         </li>
-        <li className={styles.item}>
-          <Link href="/">
-            <a className={styles.link}>Photos</a>
-          </Link>
-        </li>
       </ul>
     </nav>
   )

@@ -26,7 +26,6 @@ export async function getStaticProps({ params }) {
 export default function Repo({ readmeHtml }) {
   return (
     <>
-      <Header title="Repositories" />
       <div className="md" dangerouslySetInnerHTML={{__html: readmeHtml}}>
       </div>
     </>

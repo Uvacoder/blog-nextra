@@ -24,7 +24,6 @@ export async function getStaticProps({ params }) {
 }
 
 export default function Repo({ readmeHtml }) {
-  console.log(readmeHtml)
   return (
     <>
       <Header title="Repositories" />

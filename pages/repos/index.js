@@ -3,9 +3,16 @@ import styles from '../../styles/list.module.css'
 import Link from 'next/link'
 
 export async function getStaticProps() {
-  const res = await fetch(`https://api.github.com/users/holovin777/repos`)
+  const url = process.env.GITHUB_URL
+  const myHeaders = {
+      'Content-Type': 'application/json',
+      'Authorization': process.env.GITHUB_TOKEN,
+  }
+  const res = await fetch(url, {
+    method: 'GET',
+    headers: myHeaders
+  })
   const repos = await res.json()
-
   return {
     props: { repos }, // will be passed to the page component as props
   }

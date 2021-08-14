@@ -3,7 +3,15 @@ import showdown from 'showdown'
 import styles from "../../styles/md.module.css"
 
 export async function getStaticPaths() {
-  const res = await fetch(`https://api.github.com/users/holovin777/repos`)
+  const url = process.env.GITHUB_URL
+  const myHeaders = {
+      'Content-Type': 'application/json',
+      'Authorization': process.env.GITHUB_TOKEN,
+  }
+  const res = await fetch(url, {
+    method: 'GET',
+    headers: myHeaders
+  })
   const repos = await res.json()
   const paths = repos.map((repo) => ({
     params: { name: repo.name },

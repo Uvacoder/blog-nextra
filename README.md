@@ -1,4 +1,4 @@
-## NextBlog
+# NextBlog
 ```bash
 git clone https://github.com/holovin777/nextblog.git
 cd nextblog

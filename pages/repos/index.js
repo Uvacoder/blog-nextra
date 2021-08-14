@@ -25,7 +25,7 @@ export default function Repos({repos}) {
       <div>
         <ul className={styles.list}>
           {repos.map((repo) => (
-            <li className={styles.item}>
+            <li key={repo.id} className={styles.item}>
               <Link href={`/repos/${encodeURIComponent(repo.name)}`}>
                 <a className={styles.link}>
                   {repo.name}

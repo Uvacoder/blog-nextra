@@ -39,3 +39,7 @@ pre {
 .md a {
   color: blue;
 }
+
+.md img {
+  max-width: 360px;
+}

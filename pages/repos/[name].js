@@ -1,6 +1,5 @@
 import Header from '../../components/header'
 import showdown from 'showdown'
-import styles from "../../styles/md.module.css"
 
 export async function getStaticPaths() {
   const url = process.env.GITHUB_URL
@@ -33,9 +32,7 @@ export async function getStaticProps({ params }) {
 
 export default function Repo({ readmeHtml }) {
   return (
-    <>
-      <div className="md" dangerouslySetInnerHTML={{__html: readmeHtml}}>
-      </div>
-    </>
+    <div className="md" dangerouslySetInnerHTML={{__html: readmeHtml}}>
+    </div>
   )
 }

@@ -26,9 +26,14 @@ main {
 
 pre {
   overflow: auto;
-  color: #20DF37;
   background: #272927;
   padding: 8px;
+  border-radius: 10px;
+}
+
+code {
+  color: #20DF37;
+  background: #272927;
   border-radius: 10px;
 }
 

@@ -11,7 +11,6 @@
 
 .item {
   padding: 8px;
-  font-size: 24px;
 }
 
 .link {
@@ -22,7 +21,7 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 24px;
   border-radius: 12px;
   transition-duration: 1s;
   cursor: pointer;

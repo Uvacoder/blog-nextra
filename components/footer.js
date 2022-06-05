@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className={styles.container}>
       <p className={styles.title}>
-        blog.holovin.com
+        blog
       </p>
     </footer>
   )

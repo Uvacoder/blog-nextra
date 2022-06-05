@@ -7,7 +7,7 @@ export default function Navbar() {
       <ul className={styles.list}>
         <li className={styles.item}>
           <Link href="/">
-            <a className={styles.link}>Blog</a>
+            <a className={styles.link}>blog</a>
           </Link>
         </li>
         <li className={styles.item}>

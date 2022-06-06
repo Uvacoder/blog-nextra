@@ -5,7 +5,7 @@ export default function About() {
     <>
       <Header title="About"/>
       <div>
-	Blog app generated from GitHub repositories.
+	Content.
       </div>
     </>
   )

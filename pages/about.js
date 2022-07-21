@@ -5,7 +5,7 @@ export default function About() {
     <>
       <Header title="About"/>
       <div>
-	Content.
+	My projects.
       </div>
     </>
   )

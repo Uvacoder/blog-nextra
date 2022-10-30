@@ -22,7 +22,7 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  const res = await fetch(`https://raw.githubusercontent.com/holovin777/${params.name}/master/README.md`)
+  const res = await fetch(`https://raw.githubusercontent.com/uvacoder/${params.name}/master/README.md`)
   const readme = await res.text()
   let showdown  = require('showdown'),
     converter = new showdown.Converter(),
